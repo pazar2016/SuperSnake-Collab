@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="440" y="365"/>
         </scene>
-        <!--View Controller-->
+        <!--Instruction View Controller-->
         <scene sceneID="vAb-ua-F8c">
             <objects>
-                <viewController id="8NL-4K-vzE" sceneMemberID="viewController">
+                <viewController id="8NL-4K-vzE" customClass="InstructionViewController" customModule="Super_Snake" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nle-Bl-1Lg"/>
                         <viewControllerLayoutGuide type="bottom" id="pXv-jw-umO"/>
@@ -107,10 +107,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lt8-7J-70g">
-                                <rect key="frame" x="247" y="184" width="100" height="100"/>
-                                <animations/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRW-C6-tgT">
                                 <rect key="frame" x="204" y="377" width="50" height="50"/>
                                 <animations/>
@@ -131,6 +127,14 @@
                                 <rect key="frame" x="312" y="555" width="50" height="50"/>
                                 <animations/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrU-PA-vFp">
+                                <rect key="frame" x="287" y="168" width="116" height="116"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lt8-7J-70g">
+                                <rect key="frame" x="150" y="168" width="116" height="116"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.48463337560000003" green="0.83942945079999998" blue="0.50722100400000003" alpha="0.16424725509999999" colorSpace="calibratedRGB"/>
@@ -140,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="-13" y="1390"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="asv-tH-sEr">
             <objects>
-                <viewController id="DL2-Vi-yBx" sceneMemberID="viewController">
+                <viewController id="DL2-Vi-yBx" customClass="SettingsViewController" customModule="Super_Snake" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZbB-Ig-Kdk"/>
                         <viewControllerLayoutGuide type="bottom" id="RmL-pa-Xt2"/>
@@ -201,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="879" y="1390"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="WXZ-i4-gzq">
             <objects>
-                <viewController id="DYZ-7c-2VS" sceneMemberID="viewController">
+                <viewController id="DYZ-7c-2VS" customClass="GameViewController" customModule="Super_Snake" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aDs-Q0-8KA"/>
                         <viewControllerLayoutGuide type="bottom" id="cLV-hy-JY5"/>
