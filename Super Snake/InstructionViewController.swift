@@ -9,6 +9,13 @@
 import UIKit
 
 class InstructionViewController: UIViewController {
+    @IBOutlet weak var MoveImageViewOne: UIImageView!
+    @IBOutlet weak var MoveImageViewTwo: UIImageView!
+    @IBOutlet weak var CollectImageViewOne: UIImageView!
+    @IBOutlet weak var CollectImageViewTwo: UIImageView!
+    @IBOutlet weak var CollectImageViewThree: UIImageView!
+    @IBOutlet weak var AvoidImageViewOne: UIImageView!
+    @IBOutlet weak var AvoidImageViewTwo: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

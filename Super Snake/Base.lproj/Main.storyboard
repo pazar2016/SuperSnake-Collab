@@ -115,10 +115,6 @@
                                 <rect key="frame" x="272" y="377" width="50" height="50"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-WC-71L">
-                                <rect key="frame" x="344" y="377" width="50" height="50"/>
-                                <animations/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-Nx-oct">
                                 <rect key="frame" x="238" y="555" width="50" height="50"/>
                                 <animations/>
@@ -135,10 +131,23 @@
                                 <rect key="frame" x="150" y="168" width="116" height="116"/>
                                 <animations/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-WC-71L">
+                                <rect key="frame" x="344" y="377" width="50" height="50"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.48463337560000003" green="0.83942945079999998" blue="0.50722100400000003" alpha="0.16424725509999999" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="AvoidImageViewOne" destination="iV7-Nx-oct" id="Ib2-dL-Y9h"/>
+                        <outlet property="AvoidImageViewTwo" destination="J9t-kX-IaM" id="GGC-ao-EFN"/>
+                        <outlet property="CollectImageViewOne" destination="cRW-C6-tgT" id="rsb-hf-dLr"/>
+                        <outlet property="CollectImageViewThree" destination="iNv-WC-71L" id="jzB-eD-XOL"/>
+                        <outlet property="CollectImageViewTwo" destination="WrS-eo-Y8X" id="0fo-Hg-MDa"/>
+                        <outlet property="MoveImageViewOne" destination="lt8-7J-70g" id="NDj-Of-OPF"/>
+                        <outlet property="MoveImageViewTwo" destination="HrU-PA-vFp" id="nBc-DZ-mN2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pw-F9-9Jp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
