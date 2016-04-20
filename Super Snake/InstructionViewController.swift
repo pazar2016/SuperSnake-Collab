@@ -20,7 +20,10 @@ class InstructionViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        
+        MoveImageViewOne.image = UIImage(named: "left-right-swipe")
+        MoveImageViewTwo.image = UIImage(named: "up-down-swipe")
+        AvoidImageViewOne.image = UIImage(named: "bomb")
     }
 
 }
