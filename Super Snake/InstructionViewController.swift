@@ -13,7 +13,6 @@ class InstructionViewController: UIViewController {
     @IBOutlet weak var MoveImageViewTwo: UIImageView!
     @IBOutlet weak var CollectImageViewOne: UIImageView!
     @IBOutlet weak var CollectImageViewTwo: UIImageView!
-    @IBOutlet weak var CollectImageViewThree: UIImageView!
     @IBOutlet weak var AvoidImageViewOne: UIImageView!
     @IBOutlet weak var AvoidImageViewTwo: UIImageView!
 
@@ -24,6 +23,7 @@ class InstructionViewController: UIViewController {
         MoveImageViewOne.image = UIImage(named: "left-right-swipe")
         MoveImageViewTwo.image = UIImage(named: "up-down-swipe")
         AvoidImageViewOne.image = UIImage(named: "bomb")
+        CollectImageViewOne.image = UIImage(named: "coin")
     }
 
 }
