@@ -31,6 +31,7 @@ var xyMove = CGFloat(0)
         snake.backgroundColor = UIColor.redColor()
         view.addSubview(snake)
         
+        
         super.viewDidLoad()
         
 var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Collect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab0-Lw-3pV">
-                                <rect key="frame" x="32" y="368" width="110" height="67"/>
+                                <rect key="frame" x="20" y="368" width="110" height="67"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,19 +110,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRW-C6-tgT">
-                                <rect key="frame" x="204" y="377" width="50" height="50"/>
+                                <rect key="frame" x="150" y="344" width="116" height="116"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WrS-eo-Y8X">
-                                <rect key="frame" x="272" y="377" width="50" height="50"/>
+                                <rect key="frame" x="287" y="344" width="116" height="116"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-Nx-oct">
-                                <rect key="frame" x="238" y="555" width="50" height="50"/>
+                                <rect key="frame" x="150" y="522" width="116" height="116"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9t-kX-IaM">
-                                <rect key="frame" x="312" y="555" width="50" height="50"/>
+                                <rect key="frame" x="287" y="522" width="116" height="116"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrU-PA-vFp">
@@ -133,15 +133,11 @@
                                 <rect key="frame" x="150" y="168" width="116" height="116"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-WC-71L">
-                                <rect key="frame" x="344" y="377" width="50" height="50"/>
-                                <animations/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZh-da-QJ6">
-                                <rect key="frame" x="165" y="645" width="85" height="55"/>
+                                <rect key="frame" x="165" y="661" width="85" height="55"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="OK"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="oUt-nL-KnO"/>
                                 </connections>
@@ -154,7 +150,6 @@
                         <outlet property="AvoidImageViewOne" destination="iV7-Nx-oct" id="Ib2-dL-Y9h"/>
                         <outlet property="AvoidImageViewTwo" destination="J9t-kX-IaM" id="GGC-ao-EFN"/>
                         <outlet property="CollectImageViewOne" destination="cRW-C6-tgT" id="rsb-hf-dLr"/>
-                        <outlet property="CollectImageViewThree" destination="iNv-WC-71L" id="jzB-eD-XOL"/>
                         <outlet property="CollectImageViewTwo" destination="WrS-eo-Y8X" id="0fo-Hg-MDa"/>
                         <outlet property="MoveImageViewOne" destination="lt8-7J-70g" id="NDj-Of-OPF"/>
                         <outlet property="MoveImageViewTwo" destination="HrU-PA-vFp" id="nBc-DZ-mN2"/>
@@ -217,7 +212,7 @@
                                 <animations/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-lN-Imt">
-                                <rect key="frame" x="165" y="639" width="85" height="55"/>
+                                <rect key="frame" x="165" y="661" width="85" height="55"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Save"/>
