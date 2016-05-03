@@ -10,7 +10,6 @@ import UIKit
 
 class InstructionViewController: UIViewController {
     @IBOutlet weak var MoveImageViewOne: UIImageView!
-    @IBOutlet weak var MoveImageViewTwo: UIImageView!
     @IBOutlet weak var CollectImageViewOne: UIImageView!
     @IBOutlet weak var CollectImageViewTwo: UIImageView!
     @IBOutlet weak var AvoidImageViewOne: UIImageView!
@@ -20,10 +19,11 @@ class InstructionViewController: UIViewController {
     {
         super.viewDidLoad()
         
-        MoveImageViewOne.image = UIImage(named: "left-right-swipe")
-        MoveImageViewTwo.image = UIImage(named: "up-down-swipe")
-        AvoidImageViewOne.image = UIImage(named: "bomb")
+        MoveImageViewOne.image = UIImage(named: "gesture")
         CollectImageViewOne.image = UIImage(named: "coin")
+        CollectImageViewTwo.image = UIImage(named: "pellet")
+        AvoidImageViewOne.image = UIImage(named: "bomb")
+        AvoidImageViewTwo.image = UIImage(named: "poison")
     }
 
 }
