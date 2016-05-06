@@ -11,7 +11,6 @@
             <string>ChunkyDunk</string>
             <string>ChunkyDunk</string>
             <string>ChunkyDunk</string>
-            <string>ChunkyDunk</string>
         </mutableArray>
         <mutableArray key="ChunkyDunkOutlin.ttf">
             <string>ChunkyDunkOutlin</string>
@@ -105,7 +104,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Collect:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab0-Lw-3pV">
                                 <rect key="frame" x="25" y="364" width="126" height="76"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="ChunkyDunk" family="ChunkyDunk" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
