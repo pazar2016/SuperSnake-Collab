@@ -14,9 +14,7 @@ class GameViewController: UIViewController, UICollisionBehaviorDelegate
 
     override func viewDidLoad()
     {
-        var coinsCollected = 0
-        var ratsEaten = 0
-        var 
+       
         
         snake = UIView(frame: CGRectMake(view.center.x - 0, 400, 10, 30))
         snake.backgroundColor = UIColor.redColor()
