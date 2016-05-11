@@ -31,42 +31,42 @@ class GameViewController: UIViewController, UICollisionBehaviorDelegate
         
         
         
-var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(swipeRight)
+let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(GameViewController.respondToSwipeGesture(_:)))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeLeft)
         
-        var swipeDown = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(GameViewController.respondToSwipeGesture(_:)))
         swipeDown.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipeDown)
         
-        var swipeUp = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(GameViewController.respondToSwipeGesture(_:)))
         swipeUp.direction = UISwipeGestureRecognizerDirection.Up
         self.view.addGestureRecognizer(swipeUp)
         
-        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
-        self.view.addGestureRecognizer(swipeLeft)
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(GameViewController.respondToSwipeGesture(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
 
         
         
     }
     @IBAction func respondToSwipeGesture(sender: AnyObject)
     {
-            if var swipeGesture = swipeGestureRecognizer as? UISwipeGestureRecognizer
+            if let swipeGesture = swipeGestureRecognizer as? UISwipeGestureRecognizer
             {
                 switch swipeGesture.direction {
-                case UISwipeGestureRecognizerDirection.Right:
-                    print("Swiped right")
-                    direction = "right"
+                case UISwipeGestureRecognizerDirection.Left:
+                    print("Swiped left")
+                    direction = "left"
                 case UISwipeGestureRecognizerDirection.Down:
                     print("Swiped down")
                     direction = "down"
                 case UISwipeGestureRecognizerDirection.Up:
                     print("Swiped Up")
                     direction = "Up"
-                case UISwipeGestureRecognizerDirection.Left:
-                    print("Swiped Left")
-                    direction = "Left"
+                case UISwipeGestureRecognizerDirection.Right:
+                    print("Swiped Right")
+                    direction = "Right"
                 default:
                     break
                     
@@ -80,25 +80,25 @@ var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeG
                 xPos = xyMove
                 self.snake.transform = CGAffineTransformMakeTranslation(xyMove, yPos)
             }
-            else if direction == "left"
+            if direction == "left"
             {
                 xyMove = CGFloat(xPos - 10)
                 xPos = xyMove
                 self.snake.transform = CGAffineTransformMakeTranslation(xyMove, yPos)
             }
-            else if direction == "up"
+            if direction == "up"
             {
                 xyMove = CGFloat(yPos - 10)
                 yPos = xyMove
                 self.snake.transform = CGAffineTransformMakeTranslation(xPos, xyMove)
             }
-            else if direction == "down"
+            if direction == "down"
             {
                 xyMove = CGFloat(yPos + 10)
                 yPos = xyMove
                 self.snake.transform = CGAffineTransformMakeTranslation(xPos, yPos)
             }
-            else if direction == "stop"
+            if direction == "stop"
             {
                 self.snake.transform = CGAffineTransformMakeTranslation(xPos, yPos)
             }
