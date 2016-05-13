@@ -221,7 +221,7 @@
                                 <rect key="frame" x="207" y="140" width="187" height="123"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-lN-Imt">
-                                <rect key="frame" x="165" y="661" width="85" height="55"/>
+                                <rect key="frame" x="150" y="631" width="85" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
@@ -284,6 +284,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oUt-nL-KnO"/>
+        <segue reference="3g2-hB-FBO"/>
     </inferredMetricsTieBreakers>
 </document>
