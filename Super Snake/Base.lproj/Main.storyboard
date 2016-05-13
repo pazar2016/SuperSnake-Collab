@@ -37,7 +37,7 @@
                                 <rect key="frame" x="107" y="442" width="200" height="80"/>
                                 <fontDescription key="fontDescription" name="ChunkyDunk" family="ChunkyDunk" pointSize="30"/>
                                 <state key="normal" title="Play">
-                                    <color key="titleColor" red="0.72524068809999997" green="0.26436890400000002" blue="0.22574351209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.66274509800000003" green="0.1843137255" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="DYZ-7c-2VS" kind="show" id="W11-L3-Jts"/>
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="107" y="530" width="200" height="80"/>
                                 <fontDescription key="fontDescription" name="ChunkyDunk" family="ChunkyDunk" pointSize="30"/>
                                 <state key="normal" title="Instructions">
-                                    <color key="titleColor" red="0.72524068809999997" green="0.26436890400000002" blue="0.22574351209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.66274509800000003" green="0.1843137255" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="8NL-4K-vzE" kind="presentation" id="LrL-Bf-Cqj"/>
@@ -102,13 +102,13 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Avoid:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8a-U1-s6H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Avoid:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8a-U1-s6H">
                                 <rect key="frame" x="25" y="553" width="112" height="67"/>
                                 <fontDescription key="fontDescription" name="ChunkyDunk" family="ChunkyDunk" pointSize="40"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Move:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYQ-8t-Km0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Move:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYQ-8t-Km0">
                                 <rect key="frame" x="25" y="177" width="110" height="67"/>
                                 <fontDescription key="fontDescription" name="ChunkyDunk" family="ChunkyDunk" pointSize="40"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,14 +133,35 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="oUt-nL-KnO"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-Nx-oct">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-Nx-oct">
                                 <rect key="frame" x="182" y="544" width="72" height="72"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WrS-eo-Y8X">
                                 <rect key="frame" x="191" y="374" width="55" height="55"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cod-kO-bJE">
+                                <rect key="frame" x="32" y="7" width="350" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="YfT-s9-eoS"/>
+                                    <constraint firstAttribute="height" constant="100" id="jAc-48-Z4d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChunkyDunkOutlin" family="ChunkyDunkOutlin" pointSize="40"/>
+                                <color key="textColor" red="0.82419902150000002" green="0.30044176439999998" blue="0.25654597820000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.89730591920000002" blue="0.36560284009999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cod-kO-bJE" firstAttribute="centerX" secondItem="a9S-V2-cgE" secondAttribute="centerX" id="EAX-g8-BLK"/>
+                            <constraint firstItem="cod-kO-bJE" firstAttribute="top" secondItem="a9S-V2-cgE" secondAttribute="topMargin" constant="20" id="Ebb-My-4lF"/>
+                            <constraint firstItem="W8a-U1-s6H" firstAttribute="top" secondItem="Ab0-Lw-3pV" secondAttribute="bottom" constant="75" id="Eu5-OR-LSK"/>
+                            <constraint firstItem="fYQ-8t-Km0" firstAttribute="leading" secondItem="a9S-V2-cgE" secondAttribute="leadingMargin" constant="5" id="LnQ-TW-QeM"/>
+                            <constraint firstItem="Ab0-Lw-3pV" firstAttribute="leading" secondItem="a9S-V2-cgE" secondAttribute="leadingMargin" constant="5" id="c4x-Hs-aLP"/>
+                            <constraint firstItem="Ab0-Lw-3pV" firstAttribute="top" secondItem="fYQ-8t-Km0" secondAttribute="bottom" constant="75" id="d97-9k-LkU"/>
+                            <constraint firstItem="W8a-U1-s6H" firstAttribute="leading" secondItem="a9S-V2-cgE" secondAttribute="leadingMargin" constant="5" id="heJ-Vk-VLS"/>
+                            <constraint firstItem="iV7-Nx-oct" firstAttribute="leading" secondItem="W8a-U1-s6H" secondAttribute="trailing" constant="45" id="hjK-GN-WcF"/>
+                            <constraint firstItem="fYQ-8t-Km0" firstAttribute="top" secondItem="cod-kO-bJE" secondAttribute="bottom" constant="20" id="kC8-U8-Ued" userLabel="Move:.top = Instructions.bottom + 60"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="AvoidImageViewOne" destination="iV7-Nx-oct" id="Ib2-dL-Y9h"/>
