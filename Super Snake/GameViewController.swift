@@ -12,48 +12,48 @@ class GameViewController: UIViewController, UICollisionBehaviorDelegate
 {
     @IBOutlet var swipeGestureRecognizer: UISwipeGestureRecognizer!
     
-    
-    var snake = UIView()
+
     var timer = NSTimer()
-    var xyMove = CGFloat(0)
+   var innerView = UIView()
+    
+    var xMove = CGFloat(0)
+    var yMove = CGFloat(12)
     var xPos = CGFloat(0)
     var yPos = CGFloat(0)
-    var direction = String("stop")
+    var add = 0
+    var currentDirection = "Down"
+    let directions = [UISwipeGestureRecognizerDirection.Right, UISwipeGestureRecognizerDirection.Left, UISwipeGestureRecognizerDirection.Up, UISwipeGestureRecognizerDirection.Down]
+    var spawnedBlocks : [UIView] = []
+    var creationArray : [Int] = []
+    var snake : [UIView] = []
     
     
     override func viewDidLoad()
     {
+        super.viewDidLoad()
+        
+        innerView = UIView(frame: CGRectMake((view.frame.width - 257)/2, 95, 252, 252))
+        view.addSubview(innerView)
+        
+        xPos = 144
+        yPos = 144
+
+        for y in 0 ..< 2
+        {
+            for var x = 12; x < 252; x += 12
+            {
+creationArray.append(x)
+            }
+        }
+        
+        for direction in directions
+        {
+            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:
+                )))
+            swipe.direction = direction
+        self.view.addSwipeGestureRecognizer(swipe)
+        }
        
-        
-        snake = UIView(frame: CGRectMake(view.center.x - 0, 400, 10, 30))
-        snake.backgroundColor = UIColor.redColor()
-        view.addSubview(snake)
-        
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture:"))
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(swipeRight)
-        
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture:"))
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
-        self.view.addGestureRecognizer(swipeLeft)
-        
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture:"))
-        swipeUp.direction = UISwipeGestureRecognizerDirection.Up
-        self.view.addGestureRecognizer(swipeUp)
-        
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture:"))
-        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
-        self.view.addGestureRecognizer(swipeDown)
-        
     }
-    
-    @IBAction func swiper(sender: UISwipeGestureRecognizer) {
-        
-        
-    }
-    
-    
-    
-    
     
 }
