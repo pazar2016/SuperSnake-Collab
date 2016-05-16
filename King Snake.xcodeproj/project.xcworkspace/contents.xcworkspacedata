@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Super Snake.xcodeproj">
+      location = "self:/Users/student/Documents/SuperSnake-Collab/King Snake.xcodeproj">
    </FileRef>
 </Workspace>

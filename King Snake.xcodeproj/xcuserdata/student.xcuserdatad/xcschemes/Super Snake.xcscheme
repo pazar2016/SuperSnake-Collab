@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FE15DFC1CB55C2300B8D99E"
-               BuildableName = "Super Snake.app"
-               BlueprintName = "Super Snake"
-               ReferencedContainer = "container:Super Snake.xcodeproj">
+               BuildableName = "King Snake.app"
+               BlueprintName = "King Snake"
+               ReferencedContainer = "container:King Snake.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FE15E101CB55C2300B8D99E"
-               BuildableName = "Super SnakeTests.xctest"
-               BlueprintName = "Super SnakeTests"
-               ReferencedContainer = "container:Super Snake.xcodeproj">
+               BuildableName = "King Snake.xctest"
+               BlueprintName = "King SnakeTests"
+               ReferencedContainer = "container:King Snake.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FE15E1B1CB55C2300B8D99E"
-               BuildableName = "Super SnakeUITests.xctest"
-               BlueprintName = "Super SnakeUITests"
-               ReferencedContainer = "container:Super Snake.xcodeproj">
+               BuildableName = "King Snake.xctest"
+               BlueprintName = "King SnakeUITests"
+               ReferencedContainer = "container:King Snake.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FE15DFC1CB55C2300B8D99E"
-            BuildableName = "Super Snake.app"
-            BlueprintName = "Super Snake"
-            ReferencedContainer = "container:Super Snake.xcodeproj">
+            BuildableName = "King Snake.app"
+            BlueprintName = "King Snake"
+            ReferencedContainer = "container:King Snake.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FE15DFC1CB55C2300B8D99E"
-            BuildableName = "Super Snake.app"
-            BlueprintName = "Super Snake"
-            ReferencedContainer = "container:Super Snake.xcodeproj">
+            BuildableName = "King Snake.app"
+            BlueprintName = "King Snake"
+            ReferencedContainer = "container:King Snake.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FE15DFC1CB55C2300B8D99E"
-            BuildableName = "Super Snake.app"
-            BlueprintName = "Super Snake"
-            ReferencedContainer = "container:Super Snake.xcodeproj">
+            BuildableName = "King Snake.app"
+            BlueprintName = "King Snake"
+            ReferencedContainer = "container:King Snake.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

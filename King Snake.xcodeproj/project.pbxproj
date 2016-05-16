@@ -42,17 +42,17 @@
 		3F3BD23A1CDA509000F002CE /* ChunkyDunkOutlin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ChunkyDunkOutlin.ttf; path = Fonts/ChunkyDunkOutlin.ttf; sourceTree = SOURCE_ROOT; };
 		3FDA90F01CBEA15F00B1C5B0 /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		3FDA90F41CBEA19500B1C5B0 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		3FE15DFD1CB55C2300B8D99E /* Super Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super Snake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE15DFD1CB55C2300B8D99E /* King Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "King Snake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE15E001CB55C2300B8D99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE15E021CB55C2300B8D99E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FE15E051CB55C2300B8D99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FE15E071CB55C2300B8D99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FE15E0A1CB55C2300B8D99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FE15E0C1CB55C2300B8D99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FE15E111CB55C2300B8D99E /* Super SnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Super SnakeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE15E111CB55C2300B8D99E /* King Snake.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "King Snake.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE15E151CB55C2300B8D99E /* Super_SnakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_SnakeTests.swift; sourceTree = "<group>"; };
 		3FE15E171CB55C2300B8D99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FE15E1C1CB55C2300B8D99E /* Super SnakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Super SnakeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE15E1C1CB55C2300B8D99E /* King Snake.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "King Snake.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE15E201CB55C2300B8D99E /* Super_SnakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_SnakeUITests.swift; sourceTree = "<group>"; };
 		3FE15E221CB55C2300B8D99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,9 +95,9 @@
 		3FE15DFE1CB55C2300B8D99E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FE15DFD1CB55C2300B8D99E /* Super Snake.app */,
-				3FE15E111CB55C2300B8D99E /* Super SnakeTests.xctest */,
-				3FE15E1C1CB55C2300B8D99E /* Super SnakeUITests.xctest */,
+				3FE15DFD1CB55C2300B8D99E /* King Snake.app */,
+				3FE15E111CB55C2300B8D99E /* King Snake.xctest */,
+				3FE15E1C1CB55C2300B8D99E /* King Snake.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3FE15DFC1CB55C2300B8D99E /* Super Snake */ = {
+		3FE15DFC1CB55C2300B8D99E /* King Snake */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FE15E251CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "Super Snake" */;
+			buildConfigurationList = 3FE15E251CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "King Snake" */;
 			buildPhases = (
 				3FE15DF91CB55C2300B8D99E /* Sources */,
 				3FE15DFA1CB55C2300B8D99E /* Frameworks */,
@@ -152,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = "Super Snake";
+			name = "King Snake";
 			productName = "Super Snake";
-			productReference = 3FE15DFD1CB55C2300B8D99E /* Super Snake.app */;
+			productReference = 3FE15DFD1CB55C2300B8D99E /* King Snake.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3FE15E101CB55C2300B8D99E /* Super SnakeTests */ = {
+		3FE15E101CB55C2300B8D99E /* King SnakeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FE15E281CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "Super SnakeTests" */;
+			buildConfigurationList = 3FE15E281CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "King SnakeTests" */;
 			buildPhases = (
 				3FE15E0D1CB55C2300B8D99E /* Sources */,
 				3FE15E0E1CB55C2300B8D99E /* Frameworks */,
@@ -170,14 +170,14 @@
 			dependencies = (
 				3FE15E131CB55C2300B8D99E /* PBXTargetDependency */,
 			);
-			name = "Super SnakeTests";
+			name = "King SnakeTests";
 			productName = "Super SnakeTests";
-			productReference = 3FE15E111CB55C2300B8D99E /* Super SnakeTests.xctest */;
+			productReference = 3FE15E111CB55C2300B8D99E /* King Snake.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3FE15E1B1CB55C2300B8D99E /* Super SnakeUITests */ = {
+		3FE15E1B1CB55C2300B8D99E /* King SnakeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FE15E2B1CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "Super SnakeUITests" */;
+			buildConfigurationList = 3FE15E2B1CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "King SnakeUITests" */;
 			buildPhases = (
 				3FE15E181CB55C2300B8D99E /* Sources */,
 				3FE15E191CB55C2300B8D99E /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				3FE15E1E1CB55C2300B8D99E /* PBXTargetDependency */,
 			);
-			name = "Super SnakeUITests";
+			name = "King SnakeUITests";
 			productName = "Super SnakeUITests";
-			productReference = 3FE15E1C1CB55C2300B8D99E /* Super SnakeUITests.xctest */;
+			productReference = 3FE15E1C1CB55C2300B8D99E /* King Snake.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3FE15DF81CB55C2200B8D99E /* Build configuration list for PBXProject "Super Snake" */;
+			buildConfigurationList = 3FE15DF81CB55C2200B8D99E /* Build configuration list for PBXProject "King Snake" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3FE15DFC1CB55C2300B8D99E /* Super Snake */,
-				3FE15E101CB55C2300B8D99E /* Super SnakeTests */,
-				3FE15E1B1CB55C2300B8D99E /* Super SnakeUITests */,
+				3FE15DFC1CB55C2300B8D99E /* King Snake */,
+				3FE15E101CB55C2300B8D99E /* King SnakeTests */,
+				3FE15E1B1CB55C2300B8D99E /* King SnakeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		3FE15E131CB55C2300B8D99E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3FE15DFC1CB55C2300B8D99E /* Super Snake */;
+			target = 3FE15DFC1CB55C2300B8D99E /* King Snake */;
 			targetProxy = 3FE15E121CB55C2300B8D99E /* PBXContainerItemProxy */;
 		};
 		3FE15E1E1CB55C2300B8D99E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3FE15DFC1CB55C2300B8D99E /* Super Snake */;
+			target = 3FE15DFC1CB55C2300B8D99E /* King Snake */;
 			targetProxy = 3FE15E1D1CB55C2300B8D99E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -417,10 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Super Snake/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pazar.Super-Snake";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "pazar.King-Snake";
+				PRODUCT_NAME = "King Snake";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -429,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Super Snake/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pazar.Super-Snake";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "pazar.King-Snake";
+				PRODUCT_NAME = "King Snake";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -444,8 +450,8 @@
 				INFOPLIST_FILE = "Super SnakeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pazar.Super-SnakeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Super Snake.app/Super Snake";
+				PRODUCT_NAME = "King Snake";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/King Snake.app/King Snake";
 			};
 			name = Debug;
 		};
@@ -456,8 +462,8 @@
 				INFOPLIST_FILE = "Super SnakeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pazar.Super-SnakeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Super Snake.app/Super Snake";
+				PRODUCT_NAME = "King Snake";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/King Snake.app/King Snake";
 			};
 			name = Release;
 		};
@@ -467,7 +473,7 @@
 				INFOPLIST_FILE = "Super SnakeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pazar.Super-SnakeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "King Snake";
 				TEST_TARGET_NAME = "Super Snake";
 				USES_XCTRUNNER = YES;
 			};
@@ -479,7 +485,7 @@
 				INFOPLIST_FILE = "Super SnakeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pazar.Super-SnakeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "King Snake";
 				TEST_TARGET_NAME = "Super Snake";
 				USES_XCTRUNNER = YES;
 			};
@@ -488,7 +494,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FE15DF81CB55C2200B8D99E /* Build configuration list for PBXProject "Super Snake" */ = {
+		3FE15DF81CB55C2200B8D99E /* Build configuration list for PBXProject "King Snake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FE15E231CB55C2300B8D99E /* Debug */,
@@ -497,7 +503,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FE15E251CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "Super Snake" */ = {
+		3FE15E251CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "King Snake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FE15E261CB55C2300B8D99E /* Debug */,
@@ -506,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FE15E281CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "Super SnakeTests" */ = {
+		3FE15E281CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "King SnakeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FE15E291CB55C2300B8D99E /* Debug */,
@@ -515,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FE15E2B1CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "Super SnakeUITests" */ = {
+		3FE15E2B1CB55C2300B8D99E /* Build configuration list for PBXNativeTarget "King SnakeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FE15E2C1CB55C2300B8D99E /* Debug */,
