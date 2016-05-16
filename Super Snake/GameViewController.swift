@@ -54,6 +54,75 @@ creationArray.append(x)
         self.view.addSwipeGestureRecognizer(swipe)
         }
        
+        func blockRandom()
+        {
+            if creationArray.count == 0
+            {
+                print ("Game Over")
+            }
+            else
+            {
+                spawnedBlocks.append(createBlock(creationArray.removeAtIndex(Int(arc4random_uniform(12)) % (creationArray.count)).y: creationArray.removeAtIndex(Int(arc4random_uniform(12)) % (creationArray.count)), round: true))
+            }
+        }
+        
+        func createBlock (x: Int, y: Int, round: DarwinBoolean) -> UIView
+        {
+            let rBlock = UIView(frame: CGRectMake((CGFloat)(x), (CGFloat)(y), 12, 12))
+            if round
+            {
+                rBlock.layer.cornerRadius = 6
+            }
+            rBlock.backgroundColor = UIColor.whiteColor()
+            innerView.addSubview(rBlock)
+            return rBlock
+        }
+        
+        func resetGame()
+        {
+            xMove = 0
+            yMove = 0
+            xPos = 124
+            yPos = 124
+            timer.invalidate()
+            innerView.removeFromSuperview()
+            
+            for snakeBlock in snake
+            {
+                snakeBlock.removeFromSuperview()
+            }
+            snake.removeAll()
+            
+            pointCounter.text = "0"
+            timerFunction()
+            
+            innerView = UIView!(frame: CGRectMake((view.frame.width - 258)/2, 95, 252, 252))
+            //innerView.backgroundcolor = UIColor.blackColor()
+            view.addSubview(innerView)
+            
+            xPos = 144
+            yPos = 144
+            
+            snake.append(createBlock(Int(xPos), y: Int(yPos), round: false))
+            
+            for var y = 0; y < 4; y++
+            {
+                for var x = 12; x < 252; x += 12
+                {
+                    creationArray.append(x)
+                }
+            }
+            blockRandom()
+            
+            for direction in directions
+            {
+                let swipe = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+                swipe.direction = direction
+                self.view.addGestureRecognizer(swipe)
+            }
+        }
+        
+        func gameOver()
     }
     
 }
