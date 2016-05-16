@@ -148,6 +148,24 @@ creationArray.append(x)
         }
         
         func gameOver()
+        {
+            let alert = UIAlertController(title: "You Lost", message: "Final Score: " + pointCounter.text!, preferredStyle: .Alert)
+            
+            resetGame()
+            
+            let restartAction = UIAlertAction(title: "Retry?", style: UIAlertActionStyle.Default) {
+                UIAlertAction in
+                
+                self.resetGame()
+            }
+            let menuAction = UIAlertAction(title: "Menu", style: UIAlertActionStyle.Default) {
+                UIAlertAction in
+                
+                self.performSegueWithIdentifier("menu", sender: self)
+            }
+            alert.addAction(restartAction)
+            alert.addAction(menuAction)
+            presentViewController(alert, animated: true, completion: nil)
     }
     
-    }}
+}
