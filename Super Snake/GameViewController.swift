@@ -8,9 +8,8 @@
 
 import UIKit
 
-class GameViewController: UIViewController, UICollisionBehaviorDelegate
+class GameViewController: UIViewController
 {
-    @IBOutlet var swipeGestureRecognizer: UISwipeGestureRecognizer!
     
 
     var timer = NSTimer()
@@ -26,7 +25,6 @@ class GameViewController: UIViewController, UICollisionBehaviorDelegate
     var spawnedBlocks : [UIView] = []
     var creationArray : [Int] = []
     var snake : [UIView] = []
-    
     
     override func viewDidLoad()
     {
@@ -45,13 +43,40 @@ class GameViewController: UIViewController, UICollisionBehaviorDelegate
 creationArray.append(x)
             }
         }
-        
-        for direction in directions
+        func respondToSwipeGesture(gesture: UIGestureRecognizer)
         {
-            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:
-                )))
-            swipe.direction = direction
-        self.view.addSwipeGestureRecognizer(swipe)
+            if let swipeGesture = gesture as? UISwipeGestureRecognizer
+            {
+                switch swipeGesture.direction
+                {
+                case UISwipeGestureRecognizerDirection.Right:
+                    if currentDirection != "Left"
+                    {
+                        xMove = 12
+                        yMove = 0
+                        currentDirection = "Right"
+                    }
+                case UISwipeGestureRecognizerDirection.Down:
+                    if currentDirection != "Up"
+                    {
+                        xMove = 0
+                        yMove = 12
+                    }
+                case UISwipeGestureRecognizerDirection.Left:
+                    if currentDirection != "Right"
+                    {
+                        xMove = -12
+                        yMove = 0
+                    }
+                case UISwipeGestureRecognizerDirection.Up:
+                    if currentDirection != "Down"
+                    {
+                        xMove = 0
+                        yMove = -12
+                    }
+                default:
+                    break
+            }
         }
        
         func blockRandom()
@@ -125,4 +150,4 @@ creationArray.append(x)
         func gameOver()
     }
     
-}
+    }}
