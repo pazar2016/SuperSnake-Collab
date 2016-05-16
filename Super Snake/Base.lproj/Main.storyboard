@@ -72,6 +72,10 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="LogoImageView" destination="lpG-0D-1RQ" id="IMZ-qG-YPD"/>
+                        <outlet property="logoImageView" destination="lpG-0D-1RQ" id="Qzb-jg-vYk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,13 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController
-    
-{
+    {
+    @IBOutlet weak var LogoImageView: UIImageView!
 
     override func viewDidLoad()
     {
+           LogoImageView.image = UIImage(named: "gesture")
         
-               
         super.viewDidLoad()
     
         
