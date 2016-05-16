@@ -8,9 +8,8 @@
 
 import UIKit
 
-class GameViewController: UIViewController, UICollisionBehaviorDelegate
+class GameViewController: UIViewController
 {
-    @IBOutlet var swipeGestureRecognizer: UISwipeGestureRecognizer!
     
 
     var timer = NSTimer()
@@ -26,7 +25,6 @@ class GameViewController: UIViewController, UICollisionBehaviorDelegate
     var spawnedBlocks : [UIView] = []
     var creationArray : [Int] = []
     var snake : [UIView] = []
-    
     
     override func viewDidLoad()
     {
@@ -48,10 +46,9 @@ creationArray.append(x)
         
         for direction in directions
         {
-            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:
-                )))
+            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:))))
             swipe.direction = direction
-        self.view.addSwipeGestureRecognizer(swipe)
+            self.view.addGestureRecognizer(swipe)
         }
        
     }
