@@ -14,7 +14,7 @@ class ViewController: UIViewController
 
     override func viewDidLoad()
     {
-           LogoImageView.image = UIImage(named: "gesture")
+           LogoImageView.image = UIImage(named: "kingsnake_logo")
         
         super.viewDidLoad()
     
