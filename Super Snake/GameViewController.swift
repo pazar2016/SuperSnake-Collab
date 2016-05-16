@@ -43,14 +43,42 @@ class GameViewController: UIViewController
 creationArray.append(x)
             }
         }
-        
-        for direction in directions
+        func respondToSwipeGesture(gesture: UIGestureRecognizer)
         {
-            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:))))
-            swipe.direction = direction
-            self.view.addGestureRecognizer(swipe)
+            if let swipeGesture = gesture as? UISwipeGestureRecognizer
+            {
+                switch swipeGesture.direction
+                {
+                case UISwipeGestureRecognizerDirection.Right:
+                    if currentDirection != "Left"
+                    {
+                        xMove = 12
+                        yMove = 0
+                        currentDirection = "Right"
+                    }
+                case UISwipeGestureRecognizerDirection.Down:
+                    if currentDirection != "Up"
+                    {
+                        xMove = 0
+                        yMove = 12
+                    }
+                case UISwipeGestureRecognizerDirection.Left:
+                    if currentDirection != "Right"
+                    {
+                        xMove = -12
+                        yMove = 0
+                    }
+                case UISwipeGestureRecognizerDirection.Up:
+                    if currentDirection != "Down"
+                    {
+                        xMove = 0
+                        yMove = -12
+                    }
+                default:
+                    break
+            }
         }
-       
+        
     }
     
-}
+    }}
