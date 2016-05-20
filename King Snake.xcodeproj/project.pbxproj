@@ -16,8 +16,8 @@
 		3FE15E061CB55C2300B8D99E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE15E041CB55C2300B8D99E /* Main.storyboard */; };
 		3FE15E081CB55C2300B8D99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE15E071CB55C2300B8D99E /* Assets.xcassets */; };
 		3FE15E0B1CB55C2300B8D99E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE15E091CB55C2300B8D99E /* LaunchScreen.storyboard */; };
-		3FE15E161CB55C2300B8D99E /* Super_SnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE15E151CB55C2300B8D99E /* Super_SnakeTests.swift */; };
-		3FE15E211CB55C2300B8D99E /* Super_SnakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE15E201CB55C2300B8D99E /* Super_SnakeUITests.swift */; };
+		3FE15E161CB55C2300B8D99E /* King_SnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE15E151CB55C2300B8D99E /* King_SnakeTests.swift */; };
+		3FE15E211CB55C2300B8D99E /* King_SnakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE15E201CB55C2300B8D99E /* King_SnakeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +50,10 @@
 		3FE15E0A1CB55C2300B8D99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FE15E0C1CB55C2300B8D99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE15E111CB55C2300B8D99E /* King Snake.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "King Snake.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FE15E151CB55C2300B8D99E /* Super_SnakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_SnakeTests.swift; sourceTree = "<group>"; };
+		3FE15E151CB55C2300B8D99E /* King_SnakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = King_SnakeTests.swift; sourceTree = "<group>"; };
 		3FE15E171CB55C2300B8D99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE15E1C1CB55C2300B8D99E /* King Snake.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "King Snake.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FE15E201CB55C2300B8D99E /* Super_SnakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_SnakeUITests.swift; sourceTree = "<group>"; };
+		3FE15E201CB55C2300B8D99E /* King_SnakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = King_SnakeUITests.swift; sourceTree = "<group>"; };
 		3FE15E221CB55C2300B8D99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,9 +85,9 @@
 		3FE15DF41CB55C2200B8D99E = {
 			isa = PBXGroup;
 			children = (
-				3FE15DFF1CB55C2300B8D99E /* Super Snake */,
-				3FE15E141CB55C2300B8D99E /* Super SnakeTests */,
-				3FE15E1F1CB55C2300B8D99E /* Super SnakeUITests */,
+				3FE15DFF1CB55C2300B8D99E /* King Snake */,
+				3FE15E141CB55C2300B8D99E /* King SnakeTests */,
+				3FE15E1F1CB55C2300B8D99E /* King SnakeUITests */,
 				3FE15DFE1CB55C2300B8D99E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +102,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3FE15DFF1CB55C2300B8D99E /* Super Snake */ = {
+		3FE15DFF1CB55C2300B8D99E /* King Snake */ = {
 			isa = PBXGroup;
 			children = (
 				3FE15E001CB55C2300B8D99E /* AppDelegate.swift */,
@@ -116,24 +116,27 @@
 				3F3BD2391CDA509000F002CE /* ChunkyDunk.ttf */,
 				3F3BD23A1CDA509000F002CE /* ChunkyDunkOutlin.ttf */,
 			);
+			name = "King Snake";
 			path = "Super Snake";
 			sourceTree = "<group>";
 		};
-		3FE15E141CB55C2300B8D99E /* Super SnakeTests */ = {
+		3FE15E141CB55C2300B8D99E /* King SnakeTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FE15E151CB55C2300B8D99E /* Super_SnakeTests.swift */,
+				3FE15E151CB55C2300B8D99E /* King_SnakeTests.swift */,
 				3FE15E171CB55C2300B8D99E /* Info.plist */,
 			);
+			name = "King SnakeTests";
 			path = "Super SnakeTests";
 			sourceTree = "<group>";
 		};
-		3FE15E1F1CB55C2300B8D99E /* Super SnakeUITests */ = {
+		3FE15E1F1CB55C2300B8D99E /* King SnakeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3FE15E201CB55C2300B8D99E /* Super_SnakeUITests.swift */,
+				3FE15E201CB55C2300B8D99E /* King_SnakeUITests.swift */,
 				3FE15E221CB55C2300B8D99E /* Info.plist */,
 			);
+			name = "King SnakeUITests";
 			path = "Super SnakeUITests";
 			sourceTree = "<group>";
 		};
@@ -283,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE15E161CB55C2300B8D99E /* Super_SnakeTests.swift in Sources */,
+				3FE15E161CB55C2300B8D99E /* King_SnakeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE15E211CB55C2300B8D99E /* Super_SnakeUITests.swift in Sources */,
+				3FE15E211CB55C2300B8D99E /* King_SnakeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

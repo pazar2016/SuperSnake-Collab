@@ -24,7 +24,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Super_Snake" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="King_Snake" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -90,7 +90,7 @@
         <!--Instruction View Controller-->
         <scene sceneID="vAb-ua-F8c">
             <objects>
-                <viewController id="8NL-4K-vzE" customClass="InstructionViewController" customModule="Super_Snake" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8NL-4K-vzE" customClass="InstructionViewController" customModule="King_Snake" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nle-Bl-1Lg"/>
                         <viewControllerLayoutGuide type="bottom" id="pXv-jw-umO"/>
@@ -208,7 +208,7 @@
         <!--Game View Controller-->
         <scene sceneID="WXZ-i4-gzq">
             <objects>
-                <viewController id="DYZ-7c-2VS" customClass="GameViewController" customModule="Super_Snake" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DYZ-7c-2VS" customClass="GameViewController" customModule="King_Snake" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aDs-Q0-8KA"/>
                         <viewControllerLayoutGuide type="bottom" id="cLV-hy-JY5"/>
@@ -260,6 +260,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZQC-kF-EGE"/>
+        <segue reference="oUt-nL-KnO"/>
     </inferredMetricsTieBreakers>
 </document>
